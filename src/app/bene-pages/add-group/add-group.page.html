@@ -1,0 +1,427 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button color="success"></ion-back-button>
+        </ion-buttons>
+        <ion-title color="success">
+            <strong>Add Group Beneficiary</strong>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="cover">
+        <ion-card>
+            <ion-card-header color="success">
+                <ion-card-title>Group Information</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list>
+                    <ion-item>
+                        <ion-label> Plan Type</ion-label>
+                        <ion-select placeholder="Select One">
+                            <ion-select-option value="SSPH">BHCPF</ion-select-option>
+                            <ion-select-option value="BMPHS">Non BHCPF</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-list>
+            </ion-card-content>
+
+            <ion-card-content>
+                <ion-item>
+                    <ion-input type="text" name="family_name" placeholder=' Sponsor Full Name'></ion-input>
+                </ion-item>
+            </ion-card-content>
+            <ion-card-content>
+                <ion-item>
+                    <ion-input type="number" name="family_number" placeholder=' Sponsor Mobile Number'></ion-input>
+                </ion-item>
+            </ion-card-content>
+        </ion-card>
+        <br>
+
+        <ion-card>
+            <ion-card-header color="success">
+                <ion-card-title>Contact Information</ion-card-title>
+            </ion-card-header>
+            <ion-item>
+                <ion-input type="text" name="first_name" placeholder=' First Name'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name="middle_name" placeholder=' Middle Name '></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name="last_name" placeholder=' Last Name '></ion-input>
+            </ion-item>
+
+            <ion-list>
+                <ion-item>
+                    <ion-label> Sex</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="Male">Male</ion-select-option>
+                        <ion-select-option value="Female">Female</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+
+            <ion-item>
+                <ion-label position="floating">Date Of Birth (MM/DD/YYYY)</ion-label>
+                <ion-datetime displayFormat="MM/DD/YYYY" min="1955-01-01" max="2021-12-01" name="dob"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+                <ion-label> Residential LGA</ion-label>
+                <ion-select placeholder="Select One">
+                    <ion-select-option value="Aninri">Aninri</ion-select-option>
+                    <ion-select-option value="Agwu">Agwu</ion-select-option>
+                    <ion-select-option value="Enugu East">Enugu East</ion-select-option>
+                    <ion-select-option value="Enugu North">Enugu North</ion-select-option>
+                    <ion-select-option value="Enugu South">Enugu South</ion-select-option>
+                    <ion-select-option value="Eziagu">Eziagu</ion-select-option>
+                    <ion-select-option value="Igbo Etiti">Igbo Etiti</ion-select-option>
+                    <ion-select-option value="Igbo Eze North">Igbo Eze North</ion-select-option>
+                    <ion-select-option value="Igbo Eze South">Igbo Eze South</ion-select-option>
+                    <ion-select-option value="Isi Uzo">Isi Uzo</ion-select-option>
+                    <ion-select-option value="Nkanu East">Nkanu East</ion-select-option>
+                    <ion-select-option value="Nkanu West">Nkanu West</ion-select-option>
+                    <ion-select-option value="Nssuka">Nssuka</ion-select-option>
+                    <ion-select-option value="Oji River">Oji River</ion-select-option>
+                    <ion-select-option valuUzo Uwanie="Udenu">Udenu</ion-select-option>
+                    <ion-select-option value="Udi">Udi</ion-select-option>
+                    <ion-select-option value="Uzo Uwani">Uzo Uwani</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name="address" placeholder=' Residential Address'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name="nin_number" placeholder=' National ID Number (NIN)'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="number" name="mobile_no_pry" placeholder='Primary Phone Number '></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="number" name="mobile_no_sec" placeholder='Secondary Phone Number'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="email" name="email" placeholder=' Email Address'></ion-input>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header color="success">
+                <ion-card-title>Healthcare Provider (HCP) Information</ion-card-title>
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label>HCP LGA</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="Aninri">Aninri</ion-select-option>
+                        <ion-select-option value="Agwu">Agwu</ion-select-option>
+                        <ion-select-option value="Enugu East">Enugu East</ion-select-option>
+                        <ion-select-option value="Enugu North">Enugu North</ion-select-option>
+                        <ion-select-option value="Enugu South">Enugu South</ion-select-option>
+                        <ion-select-option value="Eziagu">Eziagu</ion-select-option>
+                        <ion-select-option value="Igbo Etiti">Igbo Etiti</ion-select-option>
+                        <ion-select-option value="Igbo Eze North">Igbo Eze North</ion-select-option>
+                        <ion-select-option value="Igbo Eze South">Igbo Eze South</ion-select-option>
+                        <ion-select-option value="Isi Uzo">Isi Uzo</ion-select-option>
+                        <ion-select-option value="Nkanu East">Nkanu East</ion-select-option>
+                        <ion-select-option value="Nkanu West">Nkanu West</ion-select-option>
+                        <ion-select-option value="Nssuka">Nssuka</ion-select-option>
+                        <ion-select-option value="Oji River">Oji River</ion-select-option>
+                        <ion-select-option valuUzo Uwanie="Udenu">Udenu</ion-select-option>
+                        <ion-select-option value="Udi">Udi</ion-select-option>
+                        <ion-select-option value="Uzo Uwani">Uzo Uwani</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+
+            <ion-item>
+                <ion-input type="text" name="Ward" placeholder='HCP Ward'></ion-input>
+            </ion-item>
+
+
+            <ion-list>
+                <ion-item>
+                    <ion-label> HCP Name</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="Aninri" disabled>ANINRI LGA</ion-select-option>
+                        <ion-select-option>PHC Nenwe</ion-select-option>
+                        <ion-select-option>Ameke HC</ion-select-option>
+                        <ion-select-option>Ndeabor HC</ion-select-option>
+                        <ion-select-option>Okpanku HC</ion-select-option>
+                        <ion-select-option>Oduma Achara HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>AWGU</ion-select-option>
+                        <ion-select-option>MCH Awgu</ion-select-option>
+                        <ion-select-option>Ugwuleshi HC</ion-select-option>
+                        <ion-select-option> Amoli HC</ion-select-option>
+                        <ion-select-option> Ugwueme HC</ion-select-option>
+                        <ion-select-option>Owelli HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>ENUGU EAST</ion-select-option>
+                        <ion-select-option>Abakpa HC</ion-select-option>
+                        <ion-select-option>Emene HC</ion-select-option>
+                        <ion-select-option>Ugbo-Owa HC</ion-select-option>
+                        <ion-select-option>Ugwogo HC</ion-select-option>
+                        <ion-select-option>Onuogba HC</ion-select-option>
+                        <ion-select-option>Neke Odenigbo HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>ENUGU NORTH</ion-select-option>
+                        <ion-select-option>Asata HC</ion-select-option>
+                        <ion-select-option>Hill Top HC</ion-select-option>
+                        <ion-select-option>Ogui Nike HC</ion-select-option>
+                        <ion-select-option>New Haven HC</ion-select-option>
+                        <ion-select-option> Coal Camp HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>ENUGU SOUTH</ion-select-option>
+                        <ion-select-option>Uwani HC</ion-select-option>
+                        <ion-select-option>Amechi HC</ion-select-option>
+                        <ion-select-option>Akwuke HC</ion-select-option>
+                        <ion-select-option>Eke Ugwuaji HC</ion-select-option>
+                        <ion-select-option>MDG HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>EZEAGU</ion-select-option>
+                        <ion-select-option> Agu Oba HC</ion-select-option>
+                        <ion-select-option> Umana Ndiuno HC</ion-select-option>
+                        <ion-select-option>Obunofia Ndiuno HC</ion-select-option>
+                        <ion-select-option>Aguobu Owa HC</ion-select-option>
+                        <ion-select-option> Olo HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>IGBO ETITI</ion-select-option>
+                        <ion-select-option> Ogbede HC</ion-select-option>
+                        <ion-select-option>Amandim HC</ion-select-option>
+                        <ion-select-option>Amanefi HC</ion-select-option>
+                        <ion-select-option>Amabuokwu HC</ion-select-option>
+                        <ion-select-option>Ezi Ukehe HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>IGBOEZE NORTH</ion-select-option>
+                        <ion-select-option>Ogrute HC</ion-select-option>
+                        <ion-select-option>Umuida HC</ion-select-option>
+                        <ion-select-option> Uda HC</ion-select-option>
+                        <ion-select-option> Umuogbo-Ulo HC</ion-select-option>
+                        <ion-select-option>Aji HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>IGBOEZE SOUTH LGA</ion-select-option>
+                        <ion-select-option> Ibagwa Aka HC</ion-select-option>
+                        <ion-select-option>Ugwunowerre HC</ion-select-option>
+                        <ion-select-option>Ajuoria Model HC</ion-select-option>
+                        <ion-select-option>Iheaka HC</ion-select-option>
+                        <ion-select-option>Itchi Agu HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>ISI-UZO LGA</ion-select-option>
+                        <ion-select-option>< Amede HC</ion-select-option>
+                        <ion-select-option> Nneke HC</ion-select-option>
+                        <ion-select-option>Umualor HC</ion-select-option>
+                        <ion-select-option>Ehamufu HC</ion-select-option>
+                        <ion-select-option>Umuhu HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>NKANU EAST LGA</ion-select-option>
+                        <ion-select-option>Model PHC Amagunze</ion-select-option>
+                        <ion-select-option>Ovuorie HC</ion-select-option>
+                        <ion-select-option> Nkerefi HC</ion-select-option>
+                        <ion-select-option>Ubahu HC</ion-select-option>
+                        <ion-select-option> Nara HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>NKANU WEST LGA</ion-select-option>
+                        <ion-select-option>Agbani HC</ion-select-option>
+                        <ion-select-option> Ozalla HC</ion-select-option>
+                        <ion-select-option>MPHC Ozalla</ion-select-option>
+                        <ion-select-option>O’Eji Ndiuno HC</ion-select-option>
+                        <ion-select-option>Amurri 1 HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>NSUKKA LGA</ion-select-option>
+                        <ion-select-option> Nsukka HC</ion-select-option>
+                        <ion-select-option>Ibagwa-Ani HC</ion-select-option>
+                        <ion-select-option>Obimo HC</ion-select-option>
+                        <ion-select-option> Opi HC</ion-select-option>
+                        <ion-select-option> Eluagu Obukpa HC</ion-select-option>
+                        <ion-select-option value="Awgu" disabled>OJI RIVER LGA</ion-select-option>
+                        <ion-select-option>Basic HC Oji River</ion-select-option>
+                        <ion-select-option>Ug HCwuoba HC</ion-select-option>
+                        <ion-select-option>Awlaw</ion-select-option>
+                        <ion-select-option> Elugwula Nkpokolo Achi HC</ion-select-option>
+                        <ion-select-option> Isikwe HC</ion-select-option>
+                        <ion-select-option value="udenu" disabled>UDENU LGA</ion-select-option>
+                        <ion-select-option>Obollo Afor HC</ion-select-option>
+                        <ion-select-option>ALGON PHC Nkwo Orba</ion-select-option>
+                        <ion-select-option>MPHC Orba</ion-select-option>
+                        <ion-select-option>Obollo Eke EBC</ion-select-option>
+                        <ion-select-option> Imilike Enu EBC</ion-select-option>
+                        <ion-select-option value="udi" disabled>UDI LGA</ion-select-option>
+                        <ion-select-option>Nsude HC</ion-select-option>
+                        <ion-select-option>Ngwo-Uno HC</ion-select-option>
+                        <ion-select-option>Umabi HC</ion-select-option>
+                        <ion-select-option>MCH Udi</ion-select-option>
+                        <ion-select-option> Nachi HC</ion-select-option>
+                        <ion-select-option value="uzo" disabled>UZO UWANI LGA</ion-select-option>
+                        <ion-select-option>Nimbo HC</ion-select-option>
+                        <ion-select-option>Adani HC</ion-select-option>
+                        <ion-select-option> Nkpologu HC</ion-select-option>
+                        <ion-select-option>Igga HC</ion-select-option>
+                        <ion-select-option>Umulokpa HC</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header color="success">
+                <ion-card-title>Socioeconomic Information</ion-card-title>
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label> Marital Status</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="Single">Single</ion-select-option>
+                        <ion-select-option value="Married">Married</ion-select-option>
+                        <ion-select-option value="Divorced">Divorced</ion-select-option>
+                        <ion-select-option value="Others">Others</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                    <ion-label> Employment Status</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="Employed">Employed</ion-select-option>
+                        <ion-select-option value="Unemployed">Unemployed</ion-select-option>
+                        <ion-select-option value="Full-time Student">Full-time Student</ion-select-option>
+                        <ion-select-option value="Part-time Student">Part-time Student</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+
+            <ion-item>
+                <ion-input type="text" name="name_employer_school" placeholder='Name Employer/School'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name="Address_employer_school" placeholder='Address Employer/School'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name=" Occupation" placeholder=' Occupation'></ion-input>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header color="success">
+                <ion-card-title>Medical History</ion-card-title>
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label>Genotype</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="AA">AA</ion-select-option>
+                        <ion-select-option value="AS">AS</ion-select-option>
+                        <ion-select-option value="SS">SS</ion-select-option>
+                        <ion-select-option value="SC">SC</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                    <ion-label>Blood Group</ion-label>
+                    <ion-select placeholder="Select One">
+                        <ion-select-option value="O+">O+</ion-select-option>
+                        <ion-select-option value="O-">O-</ion-select-option>
+                        <ion-select-option value="A+">A+</ion-select-option>
+                        <ion-select-option value="A-">A-</ion-select-option>
+                        <ion-select-option value="B+">B+</ion-select-option>
+                        <ion-select-option value="B-">B-</ion-select-option>
+                        <ion-select-option value="AB+">AB+</ion-select-option>
+                        <ion-select-option value="AB+">AB-</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+
+            <ion-item>
+                <ion-input type="text" name=" Health_Condition" placeholder='Health Condition'></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" name="Disability" placeholder=' Disability'></ion-input>
+            </ion-item>
+
+            <ion-list>
+                <ion-item>
+                    <ion-label>pregnant/Vulnerable</ion-label>
+                    <ion-select placeholder="Select One" name="pregnant_vulnerable">
+                        <ion-select-option value="Yes">Yes</ion-select-option>
+                        <ion-select-option value="No">No</ion-select-option>
+
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+            <ion-list>
+                <ion-item>
+                    <ion-label> Ever Had Surgery?</ion-label>
+                    <ion-select placeholder="Select One" name="surgery">
+                        <ion-select-option value="Yes">Yes</ion-select-option>
+                        <ion-select-option value="No">No</ion-select-option>
+
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+            <ion-item>
+                <ion-input type="text" name="Surgery_Type" placeholder='Surgery Type'></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="number" name="Surgery_Year" placeholder='Surgery Year'></ion-input>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-content>
+                I hereby declare that all the information provided are all true to the best of my knowledge, and that I
+                have not withheld any information.
+                I agree to abide by the terms and conditions of the Enugu State universal health coverage scheme
+                (ESUHCS).
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-item>
+
+                <ion-input type="file" name="file_path"></ion-input>
+            </ion-item>
+
+            <ion-card-content>
+                <ion-list>
+                    <ion-item>
+                        <ion-label>Do you agree to all Data in this form</ion-label>
+                        <ion-select placeholder="Select One" name="surgery">
+                            <ion-select-option value="Yes">Agree</ion-select-option>
+                            <ion-select-option value="No">Disagree</ion-select-option>
+
+                        </ion-select>
+                    </ion-item>
+                </ion-list>
+            </ion-card-content>
+            <ion-card-content>
+                <ion-item>
+                    <ion-label position="floating">Form Agreement Date</ion-label>
+                    <ion-datetime displayFormat="MM/DD/YYYY" min="1955-01-01" max="2021-12-01"
+                                  name="dob"></ion-datetime>
+                </ion-item>
+            </ion-card-content>
+        </ion-card>
+
+
+        <div class="row bottom-section">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-button>Next</ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button>Submit</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+
+</ion-content>
+    
+
+

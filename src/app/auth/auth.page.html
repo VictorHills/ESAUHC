@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <span style="color: green; margin-left: 15px">ESUHCS</span>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="background-pic">
+    <div class="background-filter">
+      <div class="shape"><img src="../../assets/shape.svg"></div>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Login</ion-card-title>
+        </ion-card-header>
+        <form #login="ngForm" (ngSubmit)="onSubmit(login)">
+          <ion-card-content>
+            <ion-item>
+              <ion-input
+                type="email"
+                ngModel
+                name="email"
+                required
+                email
+                #emailCtrl="ngModel"
+                placeholder='Email Address'></ion-input>
+            </ion-item>
+            <div class="error" *ngIf="!emailCtrl.valid && emailCtrl.touched"
+                 lines="none">
+              <ion-label>
+                Should be a valid email address.
+              </ion-label>
+            </div>
+            <ion-item>
+              <ion-input
+                type="password"
+                ngModel
+                name="password"
+                required
+                minlength="6"
+                #passwordCtrl="ngModel"
+                placeholder="Password"></ion-input>
+            </ion-item>
+            <div class="error" *ngIf="!passwordCtrl.valid && passwordCtrl.touched"
+                 lines="none">
+              <ion-label>
+                Should at least be 6 characters long.
+              </ion-label>
+            </div>
+            <br>
+            <h6>
+              <ion-checkbox checked="false" color="danger"></ion-checkbox>
+              <ion-label style="padding: 2%;">Remember Me</ion-label>
+            </h6>
+            <a routerLink="/forgot">Forgot Password</a>
+
+            <div class="bottom-section">
+              <ion-button type="submit"
+                          expand="full"
+                          [disabled]="!login.valid"> Sign In
+              </ion-button>
+              <span>Don't have an Account?<a routerLink="/sign-up"> SIGN UP</a></span>
+            </div>
+
+          </ion-card-content>
+        </form>
+
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

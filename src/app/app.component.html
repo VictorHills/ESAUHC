@@ -1,0 +1,61 @@
+<ion-app>
+    <div class="cover">
+
+        <ion-menu side="start" menuId="main-menu" contentId="main">
+            <ion-header>
+                <ion-toolbar color="success">
+                    <ion-title>Welcome!</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <ion-content>
+
+                <ion-list style="margin-top: 190px">
+                    <ion-menu-toggle>
+                        <ion-item routerLink='/folder'>
+                            <ion-icon name="speedometer" slot="start" color="success"></ion-icon>
+                            <ion-label>Dashboard</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+                    <ion-menu-toggle>
+                        <ion-item routerLink="/beneficiaries">
+                            <ion-icon name="people" slot="start" color="success"></ion-icon>
+                            <ion-label style="color: rgb(41, 37, 37);">Beneficiaries</ion-label>
+
+                        </ion-item>
+                    </ion-menu-toggle>
+
+                    <ion-menu-toggle>
+                        <ion-item routerLink="/mail">
+                            <ion-icon name="mail" slot="start" color="success"></ion-icon>
+                            <ion-label>Messages</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+                    <ion-menu-toggle>
+                        <ion-item routerLink="/notification">
+                            <ion-icon name="notifications" slot="start" color="success"></ion-icon>
+                            <ion-label>Notification</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+                    <ion-menu-toggle>
+                        <ion-item routerLink="/earning">
+                            <ion-icon name="document" slot="start" color="success"></ion-icon>
+                            <ion-label>Earnings</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+                    <ion-menu-toggle>
+                        <ion-item routerLink="/profile">
+                            <ion-icon name="person-add" slot="start" color="success"></ion-icon>
+                            <ion-label>Profile</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+                </ion-list>
+
+            </ion-content>
+
+
+        </ion-menu>
+        <ion-router-outlet id="main"></ion-router-outlet>
+    </div>
+</ion-app>
+  
